@@ -10,5 +10,4 @@ typedef struct {
 	uint32_t size[2];
 	VkhelperImage image;
 	VkSampler sampler;
-	int32_t id;
 } Vwdlayer;
