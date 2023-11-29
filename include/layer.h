@@ -4,11 +4,11 @@
 #include <stdint.h>
 #include <vulkan/vulkan.h>
 
-#include "../../vkhelper/include/image.h"
+#include "../../vkhelper2/include/vkhelper2.h"
 
 typedef struct {
-int32_t offset[2];
-VkhelperImage image;
+	int32_t offset[2];
+	Vkhelper2Image image;
 } Vwdlayer;
 
 #endif
