@@ -8,6 +8,7 @@
 typedef struct {
 	void (*end)(void *data);
 	void (*motion)(void *data, float pos[3], float pps[3]);
+	void (*primary)(void *data, float dx);
 } VwdlayerIfdraw;
 
 typedef struct {
