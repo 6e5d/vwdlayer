@@ -1,19 +1,12 @@
-#ifndef INCLUDEGUARD_VWDLAYER
-#define INCLUDEGUARD_VWDLAYER
-
-#include <vulkan/vulkan.h>
-
 #include "../../vkhelper2/include/vkhelper2.h"
 
 typedef struct {
-	void (*end)(void *data);
-	void (*motion)(void *data, float pos[3], float pps[3]);
-	void (*primary)(void *data, float dx);
-} VwdlayerIfdraw;
+	void (*end)(void*);
+	void (*motion)(void*, float[3], float[3]);
+	void (*primary)(void*, float);
+} Vwdlayer(Ifdraw);
 
 typedef struct {
 	int32_t offset[2];
-	Vkhelper2Image image;
-} Vwdlayer;
-
-#endif
+	Vkhelper2(Image) image;
+} Vwdlayer();
